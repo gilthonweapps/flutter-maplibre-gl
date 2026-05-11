@@ -2058,8 +2058,8 @@ class MapLibreMapController: NSObject, FlutterPlatformView, MLNMapViewDelegate, 
      */
     func setCameraTargetBounds(bounds: MLNCoordinateBounds?) {
         let bounds = bounds ?? MLNCoordinateBounds(
-            sw: CLLocationCoordinate2D(latitude: -90, longitude: -180),
-            ne: CLLocationCoordinate2D(latitude: 90, longitude: 180)
+            sw: CLLocationCoordinate2D(latitude: -90, longitude: -720),
+            ne: CLLocationCoordinate2D(latitude: 90, longitude: 720)
         )
         mapView.maximumScreenBounds = bounds;
     }
